@@ -3,7 +3,6 @@ import Button from "../Button/Button.jsx";
 
 function TextInputForm({
   inputType,
-  text,
   value,
   handleFormSubmit,
   handleChangeInput,
@@ -15,7 +14,7 @@ function TextInputForm({
         <div>
           {/* text Input */}
           <TextInput
-            type={inputType}
+            type={inputType ? "password" : "text"}
             label={"Enter some text"}
             placeholder="Enter a word here ..."
             value={value}
@@ -26,7 +25,7 @@ function TextInputForm({
         {/* Button logic */}
         <div>
           <Button
-            text={text}
+            text={inputType ? "ShowText" : "HideText"}
             onClickHandler={handleShowHideClick}
             styles="text-white bg-blue-500 border py-2 px-5 rounded-md"
           />

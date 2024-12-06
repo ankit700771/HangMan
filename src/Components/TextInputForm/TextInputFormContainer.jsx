@@ -20,8 +20,7 @@ function TextInputFormContainer() {
 
   return (
     <TextInputForm
-      inputType={password ? "password" : "text"}
-      text={password ? "ShowText" : "HideText"}
+      inputType={password}
       value={values}
       handleFormSubmit={handleFormSubmit}
       handleChangeInput={handleChangeInput}
