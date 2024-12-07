@@ -12,7 +12,7 @@ function TextInputFormContainer() {
     event.preventDefault();
     console.log("Form Submitted");
     if (values) {
-      navigate("/play");
+      navigate("/play", { state: { wordSelected: values } });
     }
   }
 
