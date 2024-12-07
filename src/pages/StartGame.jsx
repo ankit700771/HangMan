@@ -1,5 +1,4 @@
-import TextInputFormContainer from "../Components/TextInputForm/TextInputFormContainer.jsx";
-
+import TextInputFormContainer from "../Components/TextInputForm/TextInputFormContainer";
 function StartGame() {
   return (
     <>

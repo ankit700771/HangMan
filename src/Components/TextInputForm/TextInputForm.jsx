@@ -33,7 +33,7 @@ function TextInputForm({
         <div>
           <Button
             text="Start"
-            onClickHandler={() => console.log("Click me")}
+            onClickHandler={handleFormSubmit}
             styles="text-white bg-red-500 border py-2 px-5 rounded-md"
             type="Submit"
           />
